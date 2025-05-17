@@ -1,0 +1,229 @@
+#######################################################
+#03 lorf_sw1 Lord Sword
+#
+#When importing to FEditorAdv delete # and after each line.
+#######################################################
+/// - Mode 1               #Melee Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Sword (Circle Spell)_000.png
+3 p- Sword (Circle Spell)_001.png
+3 p- Sword (Circle Spell)_002.png
+3 p- Sword (Circle Spell)_003.png
+3 p- Sword (Circle Spell)_004.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C24                               #Play sword slashing air SFE
+C20                               #Play hit SFE (sounds like Knight Lord with Durandal's hit)
+C1A                               #Normal hit
+3 p- Sword (Circle Spell)_005.png
+C1B                               #Play quick "heavy step" SFE
+3 p- Sword (Circle Spell)_006.png
+5 p- Sword (Circle Spell)_007.png
+3 p- Sword (Circle Spell)_008.png
+3 p- Sword (Circle Spell)_009.png
+2 p- Sword (Circle Spell)_010.png
+1 p- Sword (Circle Spell)_011.png
+C01                               #NOP
+2 p- Sword (Circle Spell)_012.png
+3 p- Sword (Circle Spell)_013.png
+4 p- Sword (Circle Spell)_014.png
+6 p- Sword (Circle Spell)_015.png
+3 p- Sword (Circle Spell)_016.png
+3 p- Sword (Circle Spell)_017.png
+3 p- Sword (Circle Spell)_018.png
+2 p- Sword (Circle Spell)_019.png
+2 p- Sword (Circle Spell)_020.png
+5 p- Sword (Circle Spell)_021.png
+1 p- Sword (Circle Spell)_022.png
+2 p- Sword (Circle Spell)_023.png
+1 p- Sword (Circle Spell)_024.png
+1 p- Sword (Circle Spell)_025.png
+C34                               #Play heavy stepping SFE
+2 p- Sword (Circle Spell)_026.png
+2 p- Sword (Circle Spell)_027.png
+3 p- Sword (Circle Spell)_028.png
+2 p- Sword (Circle Spell)_029.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- Sword (Circle Spell)_029.png
+2 p- Sword (Circle Spell)_030.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 3               #Melee Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Sword (Circle Spell)_000.png
+C1B                               #Play quick "heavy step" SFE
+2 p- Sword (Circle Spell)_031.png
+4 p- Sword (Circle Spell)_032.png
+6 p- Sword (Circle Spell)_033.png
+4 p- Sword (Circle Spell)_034.png
+4 p- Sword (Circle Spell)_035.png
+4 p- Sword (Circle Spell)_036.png
+4 p- Sword (Circle Spell)_037.png
+C22                               #Play short sword swinging SFE
+C1B                               #Play quick "heavy step" SFE
+3 p- Sword (Circle Spell)_038.png
+3 p- Sword (Circle Spell)_039.png
+3 p- Sword (Circle Spell)_040.png
+3 p- Sword (Circle Spell)_041.png
+C23                               #Play shorter sword swinging SFE
+2 p- Sword (Circle Spell)_042.png
+C1B                               #Play quick "heavy step" SFE
+5 p- Sword (Circle Spell)_043.png
+6 p- Sword (Circle Spell)_044.png
+10 p- Sword (Circle Spell)_045.png
+3 p- Sword (Circle Spell)_046.png
+3 p- Sword (Circle Spell)_047.png
+3 p- Sword (Circle Spell)_048.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+2 p- Sword (Circle Spell)_049.png
+C09                               #Critical hit
+C20                               #Play hit SFE (sounds like Knight Lord with Durandal's hit)
+C1B                               #Play quick "heavy step" SFE
+3 p- Sword (Circle Spell)_006.png
+5 p- Sword (Circle Spell)_007.png
+3 p- Sword (Circle Spell)_008.png
+3 p- Sword (Circle Spell)_009.png
+2 p- Sword (Circle Spell)_010.png
+1 p- Sword (Circle Spell)_011.png
+C01                               #NOP
+2 p- Sword (Circle Spell)_012.png
+3 p- Sword (Circle Spell)_013.png
+4 p- Sword (Circle Spell)_014.png
+6 p- Sword (Circle Spell)_015.png
+3 p- Sword (Circle Spell)_016.png
+3 p- Sword (Circle Spell)_017.png
+3 p- Sword (Circle Spell)_018.png
+2 p- Sword (Circle Spell)_019.png
+2 p- Sword (Circle Spell)_020.png
+5 p- Sword (Circle Spell)_021.png
+1 p- Sword (Circle Spell)_022.png
+2 p- Sword (Circle Spell)_023.png
+1 p- Sword (Circle Spell)_024.png
+1 p- Sword (Circle Spell)_025.png
+C34                               #Play heavy stepping SFE
+2 p- Sword (Circle Spell)_026.png
+2 p- Sword (Circle Spell)_027.png
+3 p- Sword (Circle Spell)_028.png
+2 p- Sword (Circle Spell)_029.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- Sword (Circle Spell)_029.png
+2 p- Sword (Circle Spell)_030.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 5               #Ranged Animation 
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Sword (Circle Spell)_000.png
+C22                               #Play short sword swinging SFE
+2 p- Sword (Circle Spell)_050.png
+3 p- Sword (Circle Spell)_051.png
+C05                               #Call spell associated with equipped weapon
+1 p- Sword (Circle Spell)_052.png
+C01                               #NOP
+C23                               #Play shorter sword swinging SFE
+3 p- Sword (Circle Spell)_053.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- Sword (Circle Spell)_054.png
+3 p- Sword (Circle Spell)_055.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 6               #Ranged Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Sword (Circle Spell)_000.png
+C22                               #Play short sword swinging SFE
+2 p- Sword (Circle Spell)_050.png
+3 p- Sword (Circle Spell)_051.png
+2 p- Sword (Circle Spell)_052.png
+4 p- Sword (Circle Spell)_056.png
+2 p- Sword (Circle Spell)_052.png
+3 p- Sword (Circle Spell)_056.png
+2 p- Sword (Circle Spell)_052.png
+4 p- Sword (Circle Spell)_056.png
+C05                               #Call spell associated with equipped weapon
+1 p- Sword (Circle Spell)_057.png
+C01                               #NOP
+C23                               #Play shorter sword swinging SFE
+3 p- Sword (Circle Spell)_053.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- Sword (Circle Spell)_054.png
+3 p- Sword (Circle Spell)_055.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 7               #Dodge Melee Attack
+C18                               #Use this instead of 02 to dodge toward the foreground instead of toward the background
+1 p- Sword (Circle Spell)_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+3 p- Sword (Circle Spell)_058.png
+1 p- Sword (Circle Spell)_059.png
+C01                               #NOP
+3 p- Sword (Circle Spell)_058.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 8               #Dodge Ranged Attack
+C18                               #Use this instead of 02 to dodge toward the foreground instead of toward the background
+1 p- Sword (Circle Spell)_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+3 p- Sword (Circle Spell)_058.png
+1 p- Sword (Circle Spell)_059.png
+C01                               #NOP
+3 p- Sword (Circle Spell)_058.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 9               #Equiped with Melee Weapon
+4 p- Sword (Circle Spell)_000.png
+C01                               #NOP
+~~~
+/// - Mode 10               #Standing motions
+4 p- Sword (Circle Spell)_000.png
+C01                               #NOP
+~~~
+/// - Mode 11               #Equiped with Ranged weapon
+4 p- Sword (Circle Spell)_000.png
+C01                               #NOP
+~~~
+/// - Mode 12               #Attack Missed Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Sword (Circle Spell)_000.png
+3 p- Sword (Circle Spell)_001.png
+3 p- Sword (Circle Spell)_002.png
+3 p- Sword (Circle Spell)_003.png
+3 p- Sword (Circle Spell)_060.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C25                               #Play wing flap SFE
+3 p- Sword (Circle Spell)_061.png
+C1B                               #Play quick "heavy step" SFE
+3 p- Sword (Circle Spell)_062.png
+5 p- Sword (Circle Spell)_063.png
+3 p- Sword (Circle Spell)_064.png
+3 p- Sword (Circle Spell)_065.png
+2 p- Sword (Circle Spell)_066.png
+1 p- Sword (Circle Spell)_067.png
+C01                               #NOP
+2 p- Sword (Circle Spell)_068.png
+3 p- Sword (Circle Spell)_013.png
+4 p- Sword (Circle Spell)_016.png
+6 p- Sword (Circle Spell)_015.png
+3 p- Sword (Circle Spell)_016.png
+3 p- Sword (Circle Spell)_017.png
+3 p- Sword (Circle Spell)_018.png
+2 p- Sword (Circle Spell)_019.png
+2 p- Sword (Circle Spell)_020.png
+5 p- Sword (Circle Spell)_021.png
+1 p- Sword (Circle Spell)_022.png
+2 p- Sword (Circle Spell)_023.png
+1 p- Sword (Circle Spell)_024.png
+1 p- Sword (Circle Spell)_025.png
+C34                               #Play heavy stepping SFE
+2 p- Sword (Circle Spell)_026.png
+2 p- Sword (Circle Spell)_027.png
+3 p- Sword (Circle Spell)_028.png
+2 p- Sword (Circle Spell)_029.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- Sword (Circle Spell)_029.png
+2 p- Sword (Circle Spell)_030.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - End of animation
