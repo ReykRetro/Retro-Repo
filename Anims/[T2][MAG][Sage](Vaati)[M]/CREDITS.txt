@@ -15,4 +15,4 @@ Don't show the effect for the critical attack
 ---------------------------
 --------Formatting---------
 ---------------------------
->ReykRS
+> HauntRS
